@@ -61,6 +61,12 @@
         width: 100px;
       }
     </style>
-    <script></script>
+    <script>
+        const inputs = document.querySelectorAll('.control input')
+        function handleUpdate(){
+            console.log(this.value)
+        }
+        inputs.forEach(input => input.addEventListener('change', handleUpdate))
+    </script>
   </body>
 </html>
